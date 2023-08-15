@@ -82,6 +82,7 @@ const MobileMenuButton = styled.button`
 	
 	@media only screen and (max-width: 880px) {
 		display: flex;
+		margin-right: 20px;
     } 
 `;
 

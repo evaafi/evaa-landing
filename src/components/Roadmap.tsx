@@ -31,7 +31,7 @@ const RoadmapContainer = styled.div`
 const Content = styled.div`
 	display: flex;
 	border-top: 3px solid #3854cc;
-	width: 80%;
+	width: 82%;
 	overflow-y: visible;
 	overflow-x: hidden;
 	scroll-snap-type: x mandatory;
