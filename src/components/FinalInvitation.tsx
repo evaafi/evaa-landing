@@ -59,6 +59,9 @@ const Tokenomics = styled.div`
 		width: 50px;
 		height: 50px;
 	}
+	a {
+		text-decoration: none;
+	}
 `;
 
 const FinalInvitation = () => {

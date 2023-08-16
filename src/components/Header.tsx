@@ -29,6 +29,10 @@ const Navbar = styled.nav`
 		display: flex;
 		width: 200px;
 		margin-left: 121px;
+
+		a {
+			text-decoration: none;
+		}
 	} 
 
 	.mobileMenu{
@@ -42,6 +46,9 @@ const Navbar = styled.nav`
 			display: flex;
 			width: 200px;
 			margin-left: 20px;
+			a {
+				text-decoration: none;
+			}
 		} 
 
 		& > div:first-child {

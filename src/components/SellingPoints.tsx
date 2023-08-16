@@ -315,6 +315,9 @@ const Texts = styled.div`
 const TextsStart = styled.div`
 	text-align: start;
 	width: 45%;
+	a {
+		text-decoration: none;
+	}
 
 	h1 {
 		background-image: linear-gradient(
@@ -447,6 +450,7 @@ const TextsStart = styled.div`
 		a {
 			display: flex;
 			justify-content: center;
+			text-decoration: none;
 		}
 		div:first-of-type {
 			display: flex;

@@ -72,6 +72,8 @@ const SocialLinks = styled.div`
 		color: #a8afb7;
 		transition: all 0.2s;
 		cursor: pointer;
+		text-decoration: none;
+
 
 		&:hover {
 			background-color: #a8afb7;
