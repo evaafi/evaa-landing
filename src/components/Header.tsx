@@ -22,7 +22,7 @@ const Navbar = styled.nav`
 		align-items: center;
 		width: 100%;
 		padding: 40px 127px;
-		gap: 10px;
+		gap: 20px;
 	}
 
 	.navbarItem {
@@ -52,7 +52,7 @@ const Navbar = styled.nav`
 		} 
 
 		& > div:first-child {
-			padding: 40px 127px 0px 127px;
+			padding: 40px 0px 0px 0px;
 		}
 
 		.mobileMenu{
@@ -90,6 +90,8 @@ const MobileMenuButton = styled.button`
 	@media only screen and (max-width: 880px) {
 		display: flex;
 		margin-right: 20px;
+		cursor: pointer;
+		z-index: 999;
     } 
 `;
 
@@ -121,8 +123,8 @@ const Header = () => {
 						</Button>
 					</a>
 				</div>
-				<MobileMenuButton>
-					<LuMenu size={45} onClick={() => setShowMenu(!showMenu)} />
+				<MobileMenuButton onClick={() => setShowMenu(!showMenu)}>
+					<LuMenu size={45} />
 					<NavLinks />
 				</MobileMenuButton>
 			</div>

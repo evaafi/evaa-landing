@@ -117,11 +117,11 @@ const SecondPoint = styled.div`
 				position: absolute;
 				left: -200px;
 				top: -15px;
-				width: 495px;
+				width: 440px;
 			}
 			img:last-child {
 				position: relative;
-				width: 500px;
+				width: 440px;
 				height: auto;
 				top: 15px;
 				left: -65% !important;
@@ -350,7 +350,8 @@ const TextsStart = styled.div`
 
 		& + p {
 			margin-top: 1em;
-			font-weight: 700;
+			font-weight: 600;
+			padding-right: 10px;
 		}
 	}
 
