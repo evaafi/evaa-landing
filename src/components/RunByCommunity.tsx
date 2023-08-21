@@ -74,7 +74,7 @@ const Roadmap = () => {
 			<p>Evaa Protocol is brilliant example of community governance.</p>
 
 			<InvitationButton>
-				<a href="https://app.evaa.finance/">
+				<a href="https://ton.vote/EQDspA6XZrai7c5cuCUvGw1wfMuOdXvBSYuc8q8us94fs3Zw">
 					Dashboard
 				</a>
 				<FaChevronRight size={10} style={{ marginLeft: "1em" }} />

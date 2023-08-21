@@ -61,6 +61,11 @@ const Tokenomics = styled.div`
 	}
 	a {
 		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 999;
+		cursor: pointer;
 	}
 `;
 
@@ -75,15 +80,17 @@ const FinalInvitation = () => {
 				lending.
 			</p>
 			<Tokenomics>
-				<a href = {TokenomicsPdf} target = "_blank">
-
-				<Button>
-					Tokenomics
-					<FaChevronRight size={10} style={{ marginLeft: "1em" }} />
-				</Button>
+				<a href={TokenomicsPdf} target="_blank">
+					<Button>
+						Tokenomics
+						<FaChevronRight size={10} style={{ marginLeft: "1em" }} />
+					</Button>
 				</a>
-				<div>
-					<BsCameraVideo size={24} color="white" />
+
+				<div >
+					<a href='https://www.youtube.com/watch?v=JCA1sQhdnjI'>
+						<BsCameraVideo size={24} color="white" />
+					</a>
 				</div>
 			</Tokenomics>
 		</JoinUs>
