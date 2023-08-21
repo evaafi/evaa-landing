@@ -27,7 +27,7 @@ const Navbar = styled.nav`
 		z-index: 999;
 		box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
 		background-color: #fff !important;
-		opacity: 0.9;
+		opacity: 1;
 		animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -138,7 +138,7 @@ const MobileMenuButton = styled.nav`
 	
 	@media only screen and (max-width: 880px) {
 		display: flex;
-		margin-right: 20px;
+		margin-right: 5px;
 		cursor: pointer;
 		z-index: 999;
     } 

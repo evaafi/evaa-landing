@@ -300,6 +300,20 @@ const Texts = styled.div`
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
+		h3 {
+			color: #3854cc;
+			font-size: 44px;
+			font-weight: 800;
+			margin-bottom: 12px;
+			line-height: 40px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		p {
+			font-size: 18px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
 
 		a {
 			display: flex;
@@ -417,6 +431,18 @@ const TextsStart = styled.div`
 		flex-direction: column;
 		text-align: start;
 		align-items: flex-start;
+
+		& + p {
+			margin-top: 1em;
+			font-weight: 700;
+			padding-right: 10px;
+			font-size: 22px;
+		}
+
+		text {
+			font-size:18px;
+			font-weight: 800;
+		}
 		
 		h1 {
 			background-image: linear-gradient(
@@ -614,7 +640,7 @@ const SellingPoints = () => {
 					<p>
 						The first decentralized lending protocol on <b>TON</b> that lets
 						users lend or borrow assets without going to a centralized
-						intermediary.
+						intermediary
 					</p>
 					<a href="https://app.evaa.finance/">
 						<Button>Application</Button>
@@ -658,22 +684,22 @@ const SellingPoints = () => {
 						<Medal width="24" />
 						<p>
 							<b>First on TON</b>
-							EVAA Protocol is the first TON blockchain lending protocol
+							<text>EVAA Protocol is the first TON blockchain lending protocol</text>
 						</p>
 					</div>
 					<div className="argument">
 						<Cross width="24" />
 						<p>
 							<b>TON native and wrapped assets</b>
-							Evaa Protocol has TON and TON native tokens besides wrapped tokens
-							from other chains
+							<text>Evaa Protocol has TON and TON native tokens besides wrapped tokens
+								from other chains</text>
 						</p>
 					</div>
 					<div className="argument">
 						<Shield width="24" />
 						<p>
 							<b>Decentralized</b>
-							The protocol is based on smart contracts — fully decentralized
+							<text>The protocol is based on smart contracts — fully decentralized</text>
 						</p>
 					</div>
 					<a href="https://app.evaa.finance/">
