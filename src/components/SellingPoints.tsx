@@ -47,7 +47,7 @@ const Point = styled.div`
 	}
 
 	@media only screen and (max-width: 880px) {
-		padding: 30px 0px 0px 17px;
+		padding: 0px 0px 0px 17px;
 		display: flex;
 		flex-direction: column;
 		gap: 20px;

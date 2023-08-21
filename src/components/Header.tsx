@@ -27,7 +27,8 @@ const Navbar = styled.nav`
 		width: 100%;
 		z-index: 999;
 		box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
-		background-color: transparent !important;
+		background-color: #fff !important;
+		opacity: 0.95;
 		animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -35,10 +36,20 @@ const Navbar = styled.nav`
 
 	& > div:first-child {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
 		padding: 40px 127px;
+		gap: 20px;
+	}
+
+	.navbarWithoutMenu{
+ 	    display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
 		gap: 20px;
 	}
 
@@ -69,7 +80,7 @@ const Navbar = styled.nav`
 		} 
 
 		& > div:first-child {
-			padding: 40px 0px 0px 0px;
+			padding: 40px 0px 5px 0px;
 		}
 
 		.mobileMenu{
@@ -141,23 +152,25 @@ const Header = () => {
 	return (
 		<Navbar>
 			<div className="navbarWrapper">
-				<div className="navbarItem">
-					<img src={logo} alt="EVAA logotype" width="48" height="48" />
-				</div>
-				<NavLinks />
-				<div className="navbarItem">
-					<a href="https://app.evaa.finance/" >
-						<Button >
-							App
-						</Button>
-					</a>
-				</div>
-				<MobileMenuButton onClick={() => setShowMenu(!showMenu)}>
-					<LuMenu size={45} />
+				<div className="navbarWithoutMenu">
+					<div className="navbarItem">
+						<img src={logo} alt="EVAA logotype" width="48" height="48" />
+					</div>
 					<NavLinks />
-				</MobileMenuButton>
+					<div className="navbarItem">
+						<a href="https://app.evaa.finance/" >
+							<Button >
+								App
+							</Button>
+						</a>
+					</div>
+					<MobileMenuButton onClick={() => setShowMenu(!showMenu)}>
+						<LuMenu size={45} />
+						<NavLinks />
+					</MobileMenuButton>
+				</div>
+				<div className="mobileMenu">{menu}</div>
 			</div>
-			<div className="mobileMenu">{menu}</div>
 		</Navbar >
 	);
 };
