@@ -110,9 +110,21 @@ const Navbar = styled.nav`
 			}
 		}
 `;
+
+
+
 interface MobileMenuContainerProps extends React.HTMLProps<HTMLDivElement> {
 	show: boolean;
 }
+
+interface MenuIconProps {
+	show: boolean;
+}
+
+const MenuIcon = styled(LuMenu) <MenuIconProps>`
+	transition: transform 0.3s ease-in-out;
+	transform: ${props => (props.show ? 'rotate(90deg)' : 'none')};
+  `;
 
 const MobileMenuContainer = styled.div<MobileMenuContainerProps>`
   opacity: ${props => (props.show ? 1 : 0)};
@@ -175,7 +187,9 @@ const Header = () => {
 						</a>
 					</div>
 					<MobileMenuButton onClick={() => setShowMenu(!showMenu)}>
-						<LuMenu size={45} />
+						<MobileMenuButton onClick={() => setShowMenu(!showMenu)}>
+							<MenuIcon size={45} show={showMenu} />
+						</MobileMenuButton>
 						<NavLinks />
 					</MobileMenuButton>
 				</div>
