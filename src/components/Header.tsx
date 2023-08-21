@@ -110,8 +110,18 @@ const Navbar = styled.nav`
 			}
 		}
 `;
+interface MobileMenuContainerProps extends React.HTMLProps<HTMLDivElement> {
+	show: boolean;
+}
 
-const MobileMenuButton = styled.button`
+const MobileMenuContainer = styled.div<MobileMenuContainerProps>`
+  opacity: ${props => (props.show ? 1 : 0)};
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  transform: translateX(${props => (props.show ? '0%' : '-100%')});
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+`;
+
+const MobileMenuButton = styled.nav`
 	display: none;
 
 	
@@ -169,7 +179,7 @@ const Header = () => {
 						<NavLinks />
 					</MobileMenuButton>
 				</div>
-				<div className="mobileMenu">{menu}</div>
+				<MobileMenuContainer show={showMenu} className="mobileMenu">{menu}</MobileMenuContainer>
 			</div>
 		</Navbar >
 	);
