@@ -27,7 +27,7 @@ const Navbar = styled.nav`
 		z-index: 999;
 		box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
 		background-color: #fff !important;
-		opacity: 0.95;
+		opacity: 0.9;
 		animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 		padding-top: 0px;
 		padding-bottom: 0px;
@@ -156,7 +156,7 @@ const Header = () => {
 	const isSticky = () => {
 		const header = document.querySelector('.navbarWrapper');
 		const scrollTop = window.scrollY;
-		scrollTop >= 250 ? header?.classList.add('is-sticky') : header?.classList.remove('is-sticky');
+		scrollTop >= 20 ? header?.classList.add('is-sticky') : header?.classList.remove('is-sticky');
 	};
 
 	let menu;
