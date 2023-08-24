@@ -58,6 +58,7 @@ const MainContent = styled.main`
 	flex-direction: column;
 	font-family: Cairo;
 	width: 100%;
+	overflow-x: hidden;
 `;
 
 const Main = () => {

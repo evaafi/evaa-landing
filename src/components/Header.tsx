@@ -21,8 +21,6 @@ const Navbar = styled.nav`
 	background: transparent;
 
 	.is-sticky {
-    	position: fixed;
-    	top: 0;
 		width: 100%;
 		z-index: 999;
 		box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
