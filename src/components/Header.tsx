@@ -77,7 +77,8 @@ const Navbar = styled.nav`
 		} 
 
 		& > div:first-child {
-			padding: 40px 0px 5px 0px;
+			padding: 20px 0px 0px 0px;
+			gap: 0px;
 		}
 
 		.mobileMenu{
