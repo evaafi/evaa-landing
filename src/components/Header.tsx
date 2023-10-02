@@ -165,7 +165,7 @@ const Header = () => {
 			<a href="https://t.me/EvaaProtocolHub/"> Evaa Hub</a>
 			<a href="https://twitter.com/evaaprotocol/">Twitter</a>
 			<a href="https://medium.com/@evaaprotocol/">Medium</a>
-			<a href="https://github.com/evaafi/docs">Documentation</a>
+			<a href="https://evaa.gitbook.io/intro/">Documentation</a>
 		</div>
 	};
 

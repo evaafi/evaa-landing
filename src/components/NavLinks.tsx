@@ -120,7 +120,7 @@ const NavLinks = () => {
 				</p>
 				<DropDownMenu>
 					<div className="linkContainer">
-						<a href="https://github.com/evaafi/docs">Documentation</a>
+						<a href="https://evaa.gitbook.io/intro/">Documentation</a>
 					</div>
 				</DropDownMenu>
 			</DropDownItem>
