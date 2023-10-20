@@ -37,7 +37,7 @@ const Navbar = styled.nav`
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		padding: 40px 127px;
+		padding: 20px 127px;
 		gap: 20px;
 	}
 

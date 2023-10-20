@@ -458,7 +458,7 @@ const TextsStart = styled.div`
 			-webkit-text-fill-color: transparent;
 			-moz-background-clip: text;
 			-moz-text-fill-color: transparent;
-			font-size: 120px;
+			font-size: 90px;
 			line-height: 120px;
 			font-weight: 900;
 			letter-spacing: 6px;
@@ -468,7 +468,7 @@ const TextsStart = styled.div`
 			&:nth-child(2) {
 				display: inline-block;
 				margin-top: -40px;
-				font-size: 90px;
+				font-size: 70px;
 				line-height: 128px;
 				letter-spacing: 0;
 				font-weight: 800;
