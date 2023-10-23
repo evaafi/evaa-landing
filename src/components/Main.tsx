@@ -12,23 +12,25 @@ import usdt from "../assets/usdt.png";
 const Coins = styled.div`
 	display: flex;
 	justify-content: space-between;
-	margin: 225px 125px;
+	margin: 185px 125px;
+	gap: 15px;
 
 	img {
-		height: 90px;
+		height: 80px;
 		object-fit: cover;
+		height: auto;
 	}
 
 	.firstRow{
 		display: flex;
-		justify-content: space-between;
-		width: 53%;
+		justify-content: space-around;
+		width: 58%;
 		gap: 40px;
 	}
 	.secondRow{
 		display: flex;
-		justify-content: space-between;
-		width: 33%
+		justify-content: space-around;
+		width: 42%
 	}
 
 	@media only screen and (max-width: 880px) {
@@ -45,7 +47,7 @@ const Coins = styled.div`
 
 		.secondRow{
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
 			width: 100%;
 			gap: 50px;
 		}
