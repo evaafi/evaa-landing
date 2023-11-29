@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
 import NavLinks from "./NavLinks";
-import logo from "../assets/evaa-logo.png";
 import { Button } from "../style/styled";
 import { LuMenu } from "react-icons/lu";
 import { useEffect, useState } from "react";
+import logo from "../assets/logo-light.svg";
 
 const Navbar = styled.nav`
 	background-color: white;
@@ -174,7 +174,7 @@ const Header = () => {
 			<div className="navbarWrapper">
 				<div className="navbarWithoutMenu">
 					<div className="navbarItem">
-						<img src={logo} alt="EVAA logotype" width="48" height="48" />
+						<img src={logo} alt="EVAA logotype" height="48" />
 					</div>
 					<NavLinks />
 					<div className="navbarItem">

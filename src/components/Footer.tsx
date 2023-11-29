@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import logo from "../assets/evaa-logo.png";
 import { FiGithub } from "react-icons/fi";
 import { LiaTelegram } from "react-icons/lia";
 import { LiaTwitter } from "react-icons/lia";
+import logo from "../assets/logo-dark.svg";
 
 
 const FooterContainer = styled.footer`
@@ -91,7 +91,7 @@ const Footer = () => {
 		<FooterContainer>
 			<FooterLogo>
 				<LogoImage>
-					<img src={logo} alt="evaa logotype" />
+					<img src={logo} alt="EVAA logotype" height="48" />
 				</LogoImage>
 				<h2>EVAA Protocol</h2>
 			</FooterLogo>
