@@ -16,7 +16,7 @@ const RoadmapContainer = styled.div`
 	margin-bottom: 320px;
 
 	h1 {
-		color: #3854cc;
+		color: #3400EC;
 		font-size: 44px;
 		font-weight: 800;
 		margin-bottom: 2em;
@@ -30,7 +30,7 @@ const RoadmapContainer = styled.div`
 
 const Content = styled.div`
 	display: flex;
-	border-top: 3px solid #3854cc;
+	border-top: 3px solid #3400EC;
 	width: 82%;
 	overflow-y: visible;
 	overflow-x: hidden;
@@ -54,7 +54,7 @@ const CheckpointContainer = styled.div`
 
 	&:nth-child(2n) {
 		.checkpoint {
-			background-color: #3854cc;
+			background-color: #3400EC;
 		}
 
 		p {
@@ -73,14 +73,14 @@ const Line = styled.div`
 	width: 0;
 	top: -10px;
 	height: 50px;
-	border-inline: 1px solid #3854cc;
+	border-inline: 1px solid #3400EC;
 `;
 
 const Intersection = styled.div`
 	transform: translateY(-8px) rotate(45deg);
 	width: 12px;
 	height: 12px;
-	background-color: #3854cc;
+	background-color: #3400EC;
 	border-radius: 3px;
 `;
 
@@ -104,7 +104,7 @@ const Icon = styled.div`
 	padding: 10px;
 	margin-top: 10px;
 	background-color: #ebeefa;
-	color: #3854cc;
+	color: #3400EC;
 `;
 
 const DateAnnotation = styled.p`

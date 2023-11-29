@@ -4,18 +4,21 @@ export const Button = styled.button`
 	display: flex;
 	align-items: center;
 	width: fit-content;
-	background-color: #4c65d1;
+	background-color: #3400EC;
 	color: white;
 	border-radius: 5px;
-	padding: 11px 3em;
+	padding: 14px 3em;
 	font-weight: 700;
-	letter-spacing: 1px;
 	border: none;
 	cursor: pointer;
 	font-size: 20px;
 	href: "";
 
-	&:active {
-		background-color: #304dd1;
+
+
+	&:active,
+	&:hover {
+		background-color: #5200FF;
+		;
 	}
 `;

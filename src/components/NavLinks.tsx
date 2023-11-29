@@ -8,7 +8,7 @@ const Links = styled.div`
 	cursor: pointer !important;
 
 	p {
-		color: #3854cc;
+		color: #3400EC;
 	}
 	@media only screen and (max-width: 880px) {
 		display: none;
@@ -25,7 +25,7 @@ const DropDownItem = styled.div`
 
 	&:hover {
 		p {
-			color: #3887cc;
+			color: #3400EC;
 
 			.menuItemArrow {
 				transform: rotate(0.5turn);
@@ -78,7 +78,7 @@ const DropDownMenu = styled.div`
 
 		a:hover {
 			// background-color: rgba(56, 135, 204, 0.3);
-			color: #3854cc;
+			color: #3400EC;
 		}
 	}
 

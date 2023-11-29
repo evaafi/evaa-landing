@@ -42,8 +42,6 @@ const LogoImage = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
-	border-radius: 50%;
 	width: 30px;
 	height: 30px;
 
@@ -91,7 +89,7 @@ const Footer = () => {
 		<FooterContainer>
 			<FooterLogo>
 				<LogoImage>
-					<img src={logo} alt="EVAA logotype" height="48" />
+					<img src={logo} alt="EVAA logotype" height="30" />
 				</LogoImage>
 				<h2>EVAA Protocol</h2>
 			</FooterLogo>

@@ -11,7 +11,7 @@ const InvitationContainer = styled.div`
 	align-self: center;
 	width: 80%;
 	padding: 2em;
-	background-color: #6272ca;
+	background-color: #3400EC;
 	color: white;
 	border-radius: 10px;
 
@@ -57,7 +57,7 @@ const InvitationButton = styled(Button)`
 	color: #4761d0;
 	align-self: end;
 	a {
-		color: #6272ca;
+		color: #3400EC;
 		cursor: pointer;
 		text-decoration: none;
 	}

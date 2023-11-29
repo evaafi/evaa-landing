@@ -53,7 +53,7 @@ const Navbar = styled.nav`
 	.navbarItem {
 		display: flex;
 		width: 200px;
-		margin-left: 121px;
+		margin-left: 127px;
 
 		a {
 			text-decoration: none;
@@ -70,7 +70,7 @@ const Navbar = styled.nav`
 		.navbarItem {
 			display: flex;
 			width: 200px;
-			margin-left: 20px;
+			margin-left: 17px;
 			a {
 				text-decoration: none;
 			}
@@ -98,7 +98,7 @@ const Navbar = styled.nav`
 			}
 		
 			#links a:hover {
-				background-color: #3854cc;
+				background-color: #3400EC;
 				color: white;
 			}
 		
@@ -174,7 +174,7 @@ const Header = () => {
 			<div className="navbarWrapper">
 				<div className="navbarWithoutMenu">
 					<div className="navbarItem">
-						<img src={logo} alt="EVAA logotype" height="48" />
+						<img src={logo} alt="EVAA logotype" height="40" />
 					</div>
 					<NavLinks />
 					<div className="navbarItem">

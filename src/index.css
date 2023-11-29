@@ -8,6 +8,18 @@
   src: url("./fonts/Cairo.ttf");
 }
 
+@font-face {
+  font-family: 'Hanson';
+  src: url('./fonts/HansonBold.woff2') format('woff2'),
+      url('./fonts/HansonBold.woff') format('woff'),
+      url('./fonts/HansonBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Cairo, 'Segoe UI', 'Roboto', 'Oxygen',

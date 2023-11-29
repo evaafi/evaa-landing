@@ -205,7 +205,7 @@ const Texts = styled.div`
 	h1 {
 		background-image: linear-gradient(
 			89.83deg,
-			#3854cc -5.92%,
+			#3400EC -5.92%,
 			#278ce5 -5.91%,
 			#4c65d1 85.36%
 		);
@@ -238,7 +238,7 @@ const Texts = styled.div`
 	}
 
 	h3 {
-		color: #3854cc;
+		color: #3400EC;
 		font-size: 44px;
 		font-weight: 800;
 		margin-bottom: 12px;
@@ -301,7 +301,7 @@ const Texts = styled.div`
 		text-align: center;
 		align-items: center;
 		h3 {
-			color: #3854cc;
+			color: #3400EC;
 			font-size: 44px;
 			font-weight: 800;
 			margin-bottom: 12px;
@@ -334,31 +334,19 @@ const TextsStart = styled.div`
 	}
 
 	h1 {
-		background-image: linear-gradient(
-			89.83deg,
-			#3854cc -5.92%,
-			#278ce5 -5.91%,
-			#4c65d1 85.36%
-		);
-		background-size: 100%;
-		background-repeat: repeat;
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-background-clip: text;
-		-moz-text-fill-color: transparent;
-		font-size: 128px;
+		
+		font-size: 94px;
+		font-family: Hanson, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 		line-height: 120px;
 		font-weight: 900;
-		letter-spacing: 6px;
 		margin-block-end: 0;
+		margin-left: -3px;
+		text-transform: uppercase;
 
 		&:nth-child(2) {
 			display: inline-block;
 			margin-top: -30px;
-			font-size: 108px;
 			line-height: 128px;
-			letter-spacing: 0;
 			font-weight: 800;
 		}
 
@@ -367,10 +355,11 @@ const TextsStart = styled.div`
 			font-weight: 600;
 			padding-right: 10px;
 		}
+		
 	}
 
 	h3 {
-		color: #3854cc;
+		color: #3400EC;
 		font-size: 44px;
 		font-weight: 800;
 		margin-bottom: 12px;
@@ -439,37 +428,23 @@ const TextsStart = styled.div`
 			font-size: 22px;
 		}
 
-		text {
+		span {
 			font-size:18px;
 			font-weight: 800;
 		}
 		
 		h1 {
-			background-image: linear-gradient(
-				89.83deg,
-				#3854cc -5.92%,
-				#278ce5 -5.91%,
-				#4c65d1 85.36%
-			);
-			background-size: 100%;
-			background-repeat: repeat;
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
-			font-size: 90px;
+			font-size: 44px;
 			line-height: 120px;
 			font-weight: 900;
-			letter-spacing: 6px;
+			letter-spacing: 0;
 			margin-block-end: 0;
-			margin-top: -20px;
+			margin-top: 0px;
 	
 			&:nth-child(2) {
 				display: inline-block;
-				margin-top: -40px;
-				font-size: 70px;
-				line-height: 128px;
+				margin-top: -60px;
+				line-height: 100px;
 				letter-spacing: 0;
 				font-weight: 800;
 			}
@@ -593,7 +568,7 @@ const CarouselIndicator = styled.div`
 
 	&.chosen {
 		transform: rotate(45deg);
-		background-color: #3854cc;
+		background-color: #3400EC;
 	}
 `;
 
@@ -684,22 +659,22 @@ const SellingPoints = () => {
 						<Medal width="24" />
 						<p>
 							<b>First on TON</b>
-							<text>EVAA Protocol is the first TON blockchain lending protocol</text>
+							<span>EVAA Protocol is the first TON blockchain lending protocol</span>
 						</p>
 					</div>
 					<div className="argument">
 						<Cross width="24" />
 						<p>
 							<b>TON native and wrapped assets</b>
-							<text>Evaa Protocol has TON and TON native tokens besides wrapped tokens
-								from other chains</text>
+							<span>Evaa Protocol has TON and TON native tokens besides wrapped tokens
+								from other chains</span>
 						</p>
 					</div>
 					<div className="argument">
 						<Shield width="24" />
 						<p>
 							<b>Decentralized</b>
-							<text>The protocol is based on smart contracts — fully decentralized</text>
+							<span>The protocol is based on smart contracts — fully decentralized</span>
 						</p>
 					</div>
 					<a href="https://app.evaa.finance/">

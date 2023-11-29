@@ -25,7 +25,7 @@ const JoinUs = styled.div`
 	}
 
 	b {
-		color: #3854cc;
+		color: #3400EC;
 	}
 
 	@media only screen and (max-width: 880px) {
@@ -53,7 +53,7 @@ const Tokenomics = styled.div`
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: #6272ca;
+		background-color: #3400EC;
 		margin-left: 2em;
 		border-radius: 25px;
 		width: 50px;
