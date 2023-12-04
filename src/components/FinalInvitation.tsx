@@ -88,7 +88,7 @@ const FinalInvitation = () => {
 				</a>
 
 				<div >
-					<a href='https://www.youtube.com/watch?v=JCA1sQhdnjI'>
+					<a href='https://www.youtube.com/shorts/YsxThMXawhM '>
 						<BsCameraVideo size={24} color="white" />
 					</a>
 				</div>
