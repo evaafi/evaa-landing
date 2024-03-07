@@ -1,0 +1,443 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src:
+      url(/assets/fonts/gilroy-medium.woff2) format('woff2'),
+      url(/assets/fonts/gilroy-medium.woff) format('woff');
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src:
+      url(/assets/fonts/gilroy-semibold.woff2) format('woff2'),
+      url(/assets/fonts/gilroy-semibold.woff) format('woff');
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Gilroy';
+    src:
+      url(/assets/fonts/gilroy-extrabold.woff2) format('woff2'),
+      url(/assets/fonts/gilroy-extrabold.woff) format('woff');
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Hanson';
+    src:
+      url(/assets/fonts/hanson-bold.woff2) format('woff2'),
+      url(/assets/fonts/hanson-bold.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  :root {
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(0 0% 5%);
+
+    --card: hsl(0 0% 100% / 70%);
+    --card-foreground: hsl(0 0% 5%);
+    --card-shadow: hsl(0 0% 95%);
+
+    --tabs: hsl(0 0% 100% / 20%);
+
+    --hero-background: radial-gradient(25.28% 59.69% at 96.14% 0%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(43.97% 54.13% at 4.53% 7.98%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(23.77% 42.42% at 35.17% 116.1%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(180deg, var(--primary) 0%, #000 200.55%);
+
+    --master-background: radial-gradient(26.67% 62.96% at 86.46% 88.22%, #eeeeee 0%, rgba(255, 255, 255, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(43.97% 54.13% at 4.53% 7.98%, rgba(255, 255, 255, 0.7) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(36.66% 50.26% at 35.17% 116.1%, #eeeeee 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      linear-gradient(180deg, hsl(201 30% 35% / 15%) 0%, hsl(201 18% 77% / 15%) 109.55%);
+
+    --hero-foreground: #fff;
+
+    --light-primary: radial-gradient(40.17% 29.93% at 53.91% -9.27%, var(--primary) 0%, rgba(94, 135, 120, 0) 100%) #fff;
+
+    --light-green: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(126, 100%, 74%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #fff;
+
+    --light-pink: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(324, 100%, 74%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #fff;
+
+    --light-blue: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(191, 100%, 63%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #fff;
+
+    --popover-foreground: hsl(0 0% 5%);
+
+    --accent: hsl(240 4.8% 95.9%);
+    --accent-foreground: hsl(0 0% 15%);
+
+    --primary: hsl(259 100% 50%);
+    --primary-foreground: hsl(0 0% 98%);
+
+    --secondary: hsl(240 4.8% 95.9%);
+    --secondary-foreground: hsl(240 5.9% 10%);
+
+    --tertiary: hsl(0 0% 5% / 0.8);
+
+    --muted: hsla(240, 6%, 97%, 1);
+    --muted-foreground: hsl(0 0% 5% / 0.5);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --border: hsl(240 5.9% 90%);
+    --input: hsl(240 5.9% 90%);
+    --ring: hsl(240 10% 3.9%);
+
+    --link: hsl(211 100% 50);
+    --link-foreground: hsl(0 0% 100%);
+
+    --success: hsl(135 67% 43%);
+    --success-foreground: hsl(0 0% 100%);
+
+    --warning: hsl(35 100% 50%);
+    --warning-foreground: hsl(0 0% 100%);
+
+    --progress: hsl(128 100% 79%);
+    --progress-warning: hsl(40 86% 70%);
+    --progress-danger: hsl(0 68% 58%);
+
+    --radius: 26px;
+    --radius-lg: 40px;
+  }
+
+  .dark,
+  :root[class~='dark'] {
+    --background: hsl(0 0% 0%);
+    --foreground: hsl(0 0% 98%);
+
+    --card: hsl(201 16% 65% / 0.15);
+    --card-foreground: hsl(0 0% 98%);
+    --card-shadow: hsl(195 6% 14%);
+
+    --tabs: hsl(0 0% 100% / 20%);
+
+    --hero-background: radial-gradient(25.28% 59.69% at 96.14% 0%, var(--background) 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(43.97% 54.13% at 4.53% 7.98%, var(--background) 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(23.77% 42.42% at 35.17% 116.1%, var(--background) 0%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(180deg, var(--primary) 0%, var(--background) 150.55%);
+
+    --hero-foreground: #fff;
+
+    --master-background: radial-gradient(26.67% 62.96% at 86.46% 88.22%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(43.97% 54.13% at 4.53% 7.98%, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      radial-gradient(36.66% 50.26% at 35.17% 116.1%, #000000 0%, rgba(0, 0, 0, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+      linear-gradient(180deg, #1f282d 0%, #0a141a 109.55%);
+
+    --light-primary: radial-gradient(40.17% 29.93% at 53.91% -9.27%, var(--primary) 0%, rgba(94, 135, 120, 0) 100%)
+      #050505;
+
+    --light-green: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(126, 100%, 74%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #050505;
+
+    --light-pink: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(324, 100%, 74%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #050505;
+
+    --light-blue: radial-gradient(
+        40.17% 29.93% at 53.91% -9.27%,
+        hsla(191, 100%, 63%, 1) 0%,
+        rgba(94, 135, 120, 0) 100%
+      )
+      #050505;
+
+    --popover: hsl(240 10% 3.9%);
+
+    --popover-foreground: hsl(0 0% 98%);
+
+    --primary: hsl(259 100% 50%);
+    --primary-foreground: hsl(0 0% 98%);
+
+    --secondary: hsl(0 0% 100%);
+    --secondary-foreground: hsl(195 6% 14%);
+
+    --tertiary: hsl(0 0% 100% / 0.8);
+
+    --muted: hsl(201 16% 65% / 0.15);
+    --muted-foreground: hsl(0 0% 100% / 0.5);
+
+    --accent: hsl(195 6% 50% / 0.3);
+    --accent-foreground: hsl(0 0% 98%);
+
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+
+    --border: hsl(240 3.7% 15.9%);
+    --input: hsl(240 3.7% 15.9%);
+    --ring: hsl(240 4.9% 83.9%);
+
+    --link: hsl(211 100% 50%);
+    --link-foreground: hsl(0 0% 100%);
+
+    --success: hsl(135 67% 43%);
+    --success-foreground: hsl(0 0% 100%);
+
+    --warning: hsl(35 100% 50%);
+    --warning-foreground: hsl(0 0% 100%);
+
+    --progress: hsl(128 100% 79%);
+    --progress-warning: hsl(40 86% 70%);
+    --progress-danger: hsl(0 68% 58%);
+
+    --radius: 26px;
+    --radius-lg: 40px;
+  }
+  .twa,
+  :root[class~='twa'] {
+    --background: var(--tg-theme-bg-color);
+    --foreground: var(--tg-theme-text-color);
+
+    --hero-background: radial-gradient(25.28% 59.69% at 96.14% 0%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(43.97% 54.13% at 4.53% 7.98%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      radial-gradient(23.77% 42.42% at 35.17% 116.1%, #000 0%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(180deg, var(--tg-theme-button-color) 0%, #000 200.55%);
+
+    --popover: var(--tg-theme-button-color);
+    --popover-foreground: var(--tg-theme-button-color);
+
+    --primary: var(--tg-theme-button-color);
+    --primary-foreground: var(--tg-theme-button-text-color);
+
+    --muted: var(--tg-theme-secondary-bg-color);
+    --muted-foreground: var(--tg-theme-hint-color);
+
+    --border: var(--tg-theme-bg-color);
+    --input: var(--tg-theme-bg-color);
+    --ring: var(--background-placeholder);
+  }
+
+  .dark .twa,
+  :root[class~='twa'].dark {
+    --background: hsl(0 0% 0%);
+    --foreground: hsl(0 0% 98%);
+
+    --muted: hsl(201 16% 65% / 0.15);
+    --muted-foreground: hsl(0 0% 100% / 0.5);
+
+    --accent: hsl(195 6% 24%);
+    --accent-foreground: hsl(0 0% 98%);
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+
+input[type='number']:invalid {
+  border-color: var(hsl(--destructive));
+}
+
+.progress-shadow {
+  box-shadow:
+    0px 2px 5px 0px rgba(0, 0, 0, 0.39),
+    0px 9px 9px 0px rgba(0, 0, 0, 0.34),
+    0px 20px 12px 0px rgba(0, 0, 0, 0.2),
+    0px 36px 15px 0px rgba(0, 0, 0, 0.06),
+    0px 57px 16px 0px rgba(0, 0, 0, 0.01);
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.footer-dots {
+  height: 1.5px;
+  background-image: url("data:image/svg+xml,%3Csvg width='9' height='1.5' viewBox='0 0 9 1.5' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0' y='0' width='3' height='1.5' rx='1' ry='1' fill='%23666666' /%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+}
+
+.dot-vertical {
+  background-image: url('data:image/png;base64,UklGRkQAAABXRUJQVlA4WAoAAAAQAAAAAAAABAAAQUxQSAYAAAAAQP+fAABWUDggGAAAADABAJ0BKgEABQACQDglpAADcAD++yGAAA==');
+  background-repeat: repeat-y;
+  width: 1.5px;
+}
+
+@keyframes pulse-small {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.05) translate(-10px, -30px);
+  }
+  50% {
+    transform: scale(0.9) translate(-40px, 40);
+  }
+  75% {
+    transform: scale(1.05) translate(-60px, -20px);
+  }
+}
+
+/* Define the animation for the big circle */
+@keyframes pulse-big {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.05) translate(-10px, 15px);
+  }
+  50% {
+    transform: scale(1) translate(-20px, -60px);
+  }
+  75% {
+    transform: scale(1.05) translate(-10px, -15px);
+  }
+}
+
+.circle-small {
+  border-radius: 322.397px;
+  background: linear-gradient(180deg, #f22fb0 0%, rgba(245, 138, 37, 0) 100%, #7061a3 100%);
+  filter: blur(19.65834617614746px);
+  width: 235.9px;
+  height: 235.9px;
+  z-index: 1;
+  position: absolute;
+  top: -100px;
+  right: -20px;
+  animation: pulse-small 8s infinite ease-in-out;
+}
+
+.circle-big {
+  border-radius: 322.397px;
+  background: linear-gradient(180deg, #ff7bca 0%, rgba(255, 197, 111, 0.46) 100%);
+  filter: blur(39.31669235229492px);
+  width: 322.397px;
+  height: 322.397px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  animation: pulse-big 6s infinite ease-in-out;
+}
+
+.home-bg {
+  filter: blur(72px);
+  position: absolute;
+}
+
+.home-bg-left-pink {
+  left: -250px;
+  top: 450px;
+  transform: rotate(124deg);
+}
+
+.home-bg-left-green {
+  left: -280px;
+  top: 200px;
+  transform: rotate(-60deg);
+}
+
+.home-bg-right-pink {
+  right: -300px;
+  top: -206px;
+  transform: rotate(114deg);
+}
+
+.home-bg-right-green {
+  top: 0;
+  right: -300px;
+  transform: rotate(100deg);
+}
+
+.noise {
+  position: relative;
+  z-index: 10;
+}
+
+.noise:after {
+  content: '';
+  background: url(/noise.png) repeat;
+  mix-blend-mode: overlay;
+  border-radius: var(--radius-lg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 1;
+  background-size: 128px;
+}
+
+.noise > * {
+  position: relative;
+  z-index: 2;
+}
+
+.noise .under-noise {
+  position: absolute;
+  z-index: 0;
+}
+
+.light-green {
+  background: var(--light-green);
+}
+
+.light-pink {
+  background: var(--light-pink);
+}
+
+.light-blue {
+  background: var(--light-pink);
+}
+
+.light-primary {
+  background: var(--light-primary);
+}
