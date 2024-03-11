@@ -1,1 +1,4 @@
+/build
+.DS_Store
+.firebaserc
 /node_modules
