@@ -71,7 +71,7 @@ const Roadmap = () => {
 		<InvitationContainer>
 			<Blob3 />
 			<h1>Enjoy fully decentralized platform operated by community</h1>
-			<p>Evaa Protocol is a brilliant example of community governance.</p>
+			<p>EVAA Protocol is a brilliant example of community governance.</p>
 
 			<InvitationButton>
 				<a href="https://ton.vote/EQDspA6XZrai7c5cuCUvGw1wfMuOdXvBSYuc8q8us94fs3Zw">

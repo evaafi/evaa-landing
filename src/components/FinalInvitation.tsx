@@ -76,7 +76,7 @@ const FinalInvitation = () => {
 				Join our DeFi service with potential <b>800m+</b> users
 			</h1>
 			<p>
-				Join the Evaa Lending Protocol today and experience the future of
+				Join the EVAA Lending Protocol today and experience the future of
 				lending.
 			</p>
 			<Tokenomics>

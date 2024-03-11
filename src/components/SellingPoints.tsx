@@ -618,7 +618,7 @@ const SellingPoints = () => {
 						intermediary
 					</p>
 					<a href="https://app.evaa.finance/">
-						<Button>Application</Button>
+						<Button>Open App</Button>
 					</a>
 				</TextsStart>
 				<ImagesTop>
@@ -666,7 +666,7 @@ const SellingPoints = () => {
 						<Cross width="24" />
 						<p>
 							<b>TON native and wrapped assets</b>
-							<span>Evaa Protocol has TON and TON native tokens besides wrapped tokens
+							<span>EVAA Protocol has TON and TON native tokens besides wrapped tokens
 								from other chains</span>
 						</p>
 					</div>

@@ -104,7 +104,7 @@ const NavLinks = () => {
 						<a href="https://t.me/evaaprotocol">Telegram</a>
 					</div>
 					<div className="linkContainer">
-						<a href="https://t.me/EvaaProtocolHub/"> Evaa Hub</a>
+						<a href="https://t.me/EVAAProtocolHub/"> EVAA Hub</a>
 					</div>
 					<div className="linkContainer">
 						<a href="https://twitter.com/evaaprotocol/">Twitter</a>
