@@ -8,12 +8,14 @@ module.exports = {
       sm: ['0.875rem', '1.125rem'], // 14px
       base: ['1rem', '1.25rem'], // 16px
       lg: '1.125rem', // 18px
-      xl: ['1.25rem', '1.5rem'], // 20px
+      xl: ['1.375rem', '1.5rem'], // 22px
       '2xl': ['1.5rem', '1.87500rem'], // 24px
       '3xl': ['1.75rem', '2.1rem'], // 28px, 33.6px
-      '4xl': '2rem', // 32px
+      '4xl': ['2rem', '2.25rem'], // 32px
       '5xl': ['2.5rem', '2.625rem'], // 40px, 42px
-      '6xl': '3rem' // 48px
+      '6xl': ['3rem', '3rem'], // 48px
+      '7xl': ['4rem', '4.5rem'], // 64px
+      '8xl': ['5rem', '5.37500rem'] // 80px
     },
     fontFamily: {
       sans: [
