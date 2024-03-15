@@ -1,23 +1,10 @@
 import { cn } from "@/lib/utils";
-import { cva } from "class-variance-authority";
 import { SVGProps } from "react";
 
 export type LogoProps = SVGProps<SVGSVGElement> & {
   size: "base" | "lg";
 };
 
-const progressVariants = cva("h-full w-full flex-1 transition-all", {
-  variants: {
-    size: {
-      default: "bg-progress",
-      warning: "bg-progress-warning",
-      danger: "bg-progress-danger",
-    },
-  },
-  defaultVariants: {
-    size: "default",
-  },
-});
 
 export const Logo = ({ className, ...props }: LogoProps) => {
   return (
