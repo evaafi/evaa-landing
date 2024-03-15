@@ -52,7 +52,7 @@ module.exports = {
         lg: '2rem'
       },
       screens: {
-        '2xl': '856px'
+        '2xl': '68rem',
       }
     },
     extend: {
