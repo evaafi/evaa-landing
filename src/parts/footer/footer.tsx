@@ -9,33 +9,33 @@ import footerSvg from "@/assets/footer-bg.svg";
 export const Footer = () => {
   return (
     <div
-      className="relative p-16 h-dvh flex flex-col justify-between bg-[#5200FF]"
+      className="relative py-20 px-8 md:p-8 lg:p-16 md:h-dvh flex flex-col justify-between bg-[#5200FF]"
       style={{
         background: `#5200FF url(${footerSvg}) no-repeat`,
       }}
     >
-      <div className="flex flex-col gap-12 pt-4 flex-1 items-center justify-center px-32">
-        <h2 className="font-display text-5xl lg:text-6xl xl:text-7xl transition-all text-center">
+      <div className="flex flex-col gap-6 md:gap-12 pt-4 flex-1 items-center justify-center lg:px-16 xl:px-32">
+        <h2 className="font-display text-3xl md:text-5xl lg:text-6xl xl:text-7xl transition-all text-center">
           Access Funds or Generate Passive Income In a few clicks
         </h2>
-        <p className="max-w-lg text-xl">
+        <p className="xl:max-w-lg text-base md:text-xl text-center">
           Deposit assets, select a loan amount, and enjoy transparent,
           decentralized lending
         </p>
-        <div className="flex gap-4 items-end">
-          <Button size="lg" variant="secondary">
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-end w-full mt-2">
+          <Button size="lg" variant="secondary" className="w-full md:w-auto">
             Explore Web App
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="border-[#fff] bg-transparent"
+            className="border-[#fff] bg-transparent w-full md:w-auto"
           >
             Open in Telegram
           </Button>
         </div>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="flex mt-20 flex-col-reverse justify-start items-center lg:flex-row lg:justify-between">
         <div className="flex flex-col items-start">
           <div className="relative ml-[-19px]">
             <Logo
@@ -63,22 +63,38 @@ export const Footer = () => {
             Join our 3k+ users community
           </div>
           <div className="flex gap-7 items-center">
-            <Button asChild variant="ghost" className="p-0 hover:bg-transparent">
+            <Button
+              asChild
+              variant="ghost"
+              className="p-0 hover:bg-transparent"
+            >
               <a href="/">
                 <img src={telegramSvg} alt="" />
               </a>
             </Button>
-            <Button asChild variant="ghost" className="p-0 hover:bg-transparent">
+            <Button
+              asChild
+              variant="ghost"
+              className="p-0 hover:bg-transparent"
+            >
               <a href="">
                 <img src={xSvg} alt="" />
               </a>
             </Button>
-            <Button asChild variant="ghost" className="p-0 hover:bg-transparent">
+            <Button
+              asChild
+              variant="ghost"
+              className="p-0 hover:bg-transparent"
+            >
               <a href="">
                 <img src={mediumSvg} alt="" />
               </a>
             </Button>
-            <Button asChild variant="ghost" className="p-0 hover:bg-transparent">
+            <Button
+              asChild
+              variant="ghost"
+              className="p-0 hover:bg-transparent"
+            >
               <a href="">
                 <img src={telegramHubSvg} alt="" />
               </a>

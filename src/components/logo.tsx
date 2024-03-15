@@ -44,7 +44,7 @@ export const Logo = ({ className, ...props }: LogoProps) => {
       </span>
       <span
         className={cn(
-          "hidden font-black uppercase md:block w-20 leading-[14px] text-sm",
+          "font-black uppercase w-20 leading-[14px] text-sm",
           className
         )}
       >

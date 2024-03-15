@@ -3,6 +3,14 @@ module.exports = {
   darkMode: ['class'],
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
+    screens: {
+      xs: '320px',
+      sm: '400px',
+      md: '768px',
+      lg: '964px',
+      xl: '1280px',
+      '2xl': '1440px'
+    },
     fontSize: {
       xs: ['0.8125rem', '1rem'], // 13px
       sm: ['0.875rem', '1.125rem'], // 14px
