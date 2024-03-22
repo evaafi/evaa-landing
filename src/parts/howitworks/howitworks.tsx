@@ -4,20 +4,22 @@ import phonesPng from "@/assets/phones.png";
 import macbookPng from "@/assets/macbook.png";
 import how1Png from "@/assets/how-1.png";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 export const HowItWorks = () => {
+  const isMobile = useIsMobile();
   return (
     <div className="mt-[200px] relative">
-      <img src={how1Png} alt="" className="absolute -z-10" />
       <h2 className="text-7xl font-display text-center">How it works</h2>
       <ParallaxProvider>
-        <div className="slider pt-[100px]">
-          <Parallax translateY={["0px", "-400px"]}>
-            <div className="slide flex items-center h-[600px]">
-              <div className="flex-1 flex justify-center">
-                <img src={cardsPng} alt="" />
+        <div className="flex md:px-10 xl:px-32 flex-col gap-10 xl:gap-36 pt-[100px]">
+          <Parallax translateY={["0px", "-400px"]} disabled={isMobile}>
+            <div className="flex flex-col gap-10 lg:gap-24 md:flex-row justify-stretch items-center md:h-[600px]">
+              <div className="flex flex-1 flex-col md:flex-row justify-center relative">
+                <img src={cardsPng} className="max-w-[500px] w-full" alt="" />
+                <img src={how1Png} alt="" className="absolute t-0 -z-10" />
               </div>
-              <div className="max-w-[540px] pr-36 space-y-6">
+              <div className="space-y-6 flex-1 max-w-sm xl:mr-10">
                 <h3 className="text-3xl font-display">
                   Borrow Crypto with Ease
                 </h3>
@@ -33,12 +35,13 @@ export const HowItWorks = () => {
               </div>
             </div>
           </Parallax>
-          <Parallax translateY={["-200px", "-100px"]}>
-            <div className="slide flex items-center h-[600px]">
-              <div className="flex-1 flex justify-center">
-                <img src={phonesPng} className="max-w-[520px]" alt="" />
+          <Parallax translateY={["-200px", "-100px"]} disabled={isMobile}>
+            <div className="flex flex-col gap-10 lg:gap-24 md:flex-row justify-stretch items-center md:h-[600px]">
+              <div className="flex flex-1 flex-col md:flex-row justify-center relative">
+                <img src={phonesPng} className="max-w-[500px] w-full" alt="" />
+                <img src={how1Png} alt="" className="absolute t-0 -z-10" />
               </div>
-              <div className="max-w-[540px] pr-36 space-y-6">
+              <div className="space-y-6 flex-1 max-w-sm xl:mr-10">
                 <h3 className="text-3xl font-display">
                   Earn Passive Income by Lending
                 </h3>
@@ -55,12 +58,13 @@ export const HowItWorks = () => {
               </div>
             </div>
           </Parallax>
-          <Parallax translateY={["-200px", "100px"]}>
-            <div className="slide flex items-center h-[600px]">
-              <div className="flex-1 flex justify-center">
-                <img src={macbookPng} className="max-w-[633px]" alt="" />
+          <Parallax translateY={["-200px", "100px"]} disabled={isMobile}>
+            <div className="flex flex-col gap-10 lg:gap-24 md:flex-row justify-stretch items-center md:h-[600px]">
+              <div className="flex flex-1 flex-col md:flex-row justify-center relative">
+                <img src={macbookPng} className="max-w-[500px] w-full" alt="" />
+                <img src={how1Png} alt="" className="absolute t-0 -z-10" />
               </div>
-              <div className="max-w-[540px] pr-36 space-y-6">
+              <div className="space-y-6 flex-1 max-w-sm xl:mr-10">
                 <h3 className="text-3xl font-display">
                   Community-Driven Financial Empowerment
                 </h3>
