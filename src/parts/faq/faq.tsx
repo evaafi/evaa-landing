@@ -16,7 +16,7 @@ export const Faq = () => {
             <AccordionItem
               key={article.id}
               value={article.id}
-              className="hover:bg-accent rounded-md px-4 border-b-0"
+              className="hover:bg-accent rounded-md md:px-4 border-b-0"
             >
               <AccordionTrigger className="pb-1 pt-0 py-4 text-left hover:no-underline font-display text-lg">
                 {article.title}

@@ -9,7 +9,7 @@ import footerSvg from "@/assets/footer-bg.svg";
 export const Footer = () => {
   return (
     <div
-      className="relative py-20 px-8 md:p-8 lg:p-16 xl:h-dvh flex flex-col justify-between bg-[#5200FF]"
+      className="relative py-20 pb-10 md:pb-20 px-8 md:p-8 lg:p-16 flex flex-col justify-between bg-[#5200FF]"
       style={{
         background: `#5200FF url(${footerSvg}) no-repeat`,
       }}
@@ -35,7 +35,7 @@ export const Footer = () => {
           </Button>
         </div>
       </div>
-      <div className="flex mt-20 flex-col-reverse justify-start gap-10 items-center md:flex-row md:justify-between">
+      <div className="flex mt-10 flex-col-reverse justify-start gap-10 items-center md:flex-row md:justify-between">
         <div className="flex flex-col items-center md:items-start">
           <div className="relative ml-[-19px]">
             <Logo
@@ -45,7 +45,7 @@ export const Footer = () => {
               className="text-xl leading-[23px]"
             />
           </div>
-          <nav className="flex items-center justify-center gap-8">
+          <nav className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 mt-4 md:mt-2">
             <span className="text-muted-foreground hover:text-foreground transition-colors">
               © 2024 EVAA Protocol
             </span>
