@@ -7,14 +7,14 @@ export const Welcome = () => {
   const isLargeScreen = useIsLargeScreen();
 
   return (
-    <div className="flex flex-col relative md:z-0">
+    <div className="flex flex-col relative md:z-0 bg-[#0057FF] md:bg-transparent rounded-lg overflow-hidden md:overflow-visible">
       <div
-        className="rounded-lg overflow-hidden relative pt-6 md:-mt-24 md:pt-24 pb-36"
+        className="rounded-lg overflow-hidden relative pt-6 md:-mt-24 md:pt-24 md:pb-36"
         style={{
           clipPath: "#desktop-bg-mask",
           background: "#0057FF",
           maskImage: isMobile
-            ? `url(/assets/images/mobile-bg.svg)`
+            ? `none`
             : `url(/assets/images/desktop-bg.svg)`,
           maskSize: isLargeScreen ? "contain" : "cover",
           maskPosition: "center",
@@ -55,7 +55,7 @@ export const Welcome = () => {
           </div>
         </div>
       </div>
-      <div className=" absolute bottom-0 left-0 right-0 flex justify-center gap-4 items-end pt-16">
+      <div className="md:absolute bottom-0 left-0 right-0 flex flex-col md:flex-row justify-center gap-4 items-center md:items-end pt-16">
         <Button size="lg">Explore Web App</Button>
         <Button size="lg" variant="secondary">
           Open in Telegram
