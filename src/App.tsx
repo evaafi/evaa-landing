@@ -10,7 +10,7 @@ import { WhyEvaa } from "./parts/whyevaa/whyevaa";
 function App() {
   return (
     <div>
-      <div className="container p-6 max-w-full">
+      <div className="container py-1 md:py-5 p-5 max-w-full">
         <Navigation />
         <Welcome />
         <Featured />

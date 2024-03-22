@@ -441,3 +441,18 @@ input[type='number']:invalid {
 .light-primary {
   background: var(--light-primary);
 }
+
+.svg-background {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  height: 577px; /* Adjust the height to maintain aspect ratio or as needed */
+  overflow: hidden; /* Ensures no overflow if SVG is larger than the container */
+}
+
+.svg-background svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
