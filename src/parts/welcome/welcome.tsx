@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useIsLargeScreen, useIsMobile } from "@/hooks/useIsMobile";
 import tonCoinSvg from "@/assets/ton-big.svg";
+import { MouseParallax } from "react-just-parallax";
 
 export const Welcome = () => {
   const isMobile = useIsMobile();
@@ -13,15 +14,15 @@ export const Welcome = () => {
         style={{
           clipPath: "#desktop-bg-mask",
           background: "#0057FF",
-          maskImage: isMobile
-            ? `none`
-            : `url(/assets/images/desktop-bg.svg)`,
+          maskImage: isMobile ? `none` : `url(/assets/images/desktop-bg.svg)`,
           maskSize: isLargeScreen ? "contain" : "cover",
           maskPosition: "center",
           backgroundSize: "cover",
         }}
       >
-        <img src={tonCoinSvg} alt="" className="absolute left-40" />
+        <MouseParallax strength={0.1} lerpEase={0.05}>
+          <img src={tonCoinSvg} alt="" className="absolute -top-[160px] left-40" />
+        </MouseParallax>
         <div className="flex flex-col relative h-full z-10">
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             <div className="flex flex-col items-center gap-16 flex-1 justify-between pt-6  px-8">
