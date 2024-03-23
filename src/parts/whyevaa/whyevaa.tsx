@@ -11,12 +11,12 @@ import evaaIphonePng from "@/assets/evaa-iphone.png";
 
 export const WhyEvaa = () => {
   return (
-    <div className="relative md:px-6 mt-56">
+    <div className="relative md:px-6 py-24">
       <h2 className="text-7xl font-display text-center">Why EVAA</h2>
       <div className="flex flex-col xl:flex-row mt-16 gap-5 xl:h-[633px]">
-        <div className="md:flex xl:flex-col xl:justify-stretch break-inside-avoid space-y-5 md:space-y-0 md:space-x-5 xl:space-x-0">
+        <div className="md:flex xl:flex-col xl:justify-stretch break-inside-avoid space-y-5 md:space-x-5 xl:space-x-0">
           <Card
-            className="bg-[#FF5349] flex-1 bg-no-repeat"
+            className="bg-[#FF5349] flex-1 bg-no-repeat hover:scale-[1.03] transition-transform duration-300"
             style={{
               backgroundImage: `url(${abstractN1})`,
               backgroundSize: "667px 667px",
@@ -44,7 +44,7 @@ export const WhyEvaa = () => {
             </CardContent>
           </Card>
 
-          <Card className="flex-1">
+          <Card className="flex-1 hover:scale-[1.03] transition-transform duration-300">
             <CardContent className="p-8 space-y-4">
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-display">
@@ -61,7 +61,7 @@ export const WhyEvaa = () => {
           </Card>
         </div>
         <div className="md:flex gap-5">
-          <Card className="bg-[#8955F7] md:h-[633px] xl:h-auto flex-1 break-inside-avoid relative overflow-hidden">
+          <Card className="bg-[#8955F7] md:h-[633px] xl:h-auto flex-1 break-inside-avoid relative overflow-hidden hover:scale-[1.03] transition-transform duration-300">
             <CardContent className="p-8 space-y-4">
               <div className="flex items-center gap-2">
                 <span className="text-2xl font-display">Telegram Mini App</span>
@@ -93,7 +93,7 @@ export const WhyEvaa = () => {
           </Card>
 
           <div className="break-inside-avoid flex-1 flex flex-col space-y-5">
-            <Card className="break-inside-avoid">
+            <Card className="break-inside-avoid hover:scale-[1.03] transition-transform duration-300">
               <CardContent className="p-8 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-xl lg:text-2xl font-display">
@@ -108,7 +108,7 @@ export const WhyEvaa = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card className="bg-[#57FF84] flex-1">
+            <Card className="bg-[#57FF84] flex-1 hover:scale-[1.03] transition-transform duration-300">
               <CardContent className="p-8 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-xl 2xl:text-2xl font-display text-black">

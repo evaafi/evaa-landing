@@ -1,0 +1,145 @@
+.on-circle {
+  transition-duration: 1s;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.on-circle-sun {
+  background: linear-gradient(180deg, #ff7bca 0%, rgba(255, 197, 111, 0.46) 100%);
+  width: 280px;
+  height: 280px;
+
+  filter: blur(40px);
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: pulse-big 6s infinite ease-in-out;
+  
+}
+
+.on-circle-mars {
+  background: linear-gradient(180deg, #f22fb0 0%, rgba(245, 138, 37, 0) 100%, #7061a3 100%);
+  width: 200px;
+  height: 200px;
+  filter: blur(20px);
+  z-index: 3;
+  top: -50px;
+  right: -20px;
+  animation: pulse-small 8s infinite ease-in-out;
+}
+
+.on-circle-neptune {
+  background: linear-gradient(180deg, #42ddff 0%, rgba(17, 112, 255, 0.46) 100%);
+  width: 300px;
+  height: 300px;
+  filter: blur(40px);
+  flex-shrink: 0;
+  top: 60px;
+  left: 40px;
+  animation: pulse-big 12s infinite ease-in-out;
+}
+
+
+.on-circle-pluto {
+  filter: blur(30px);
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(180deg, #7d40ff 0%, rgba(245, 138, 37, 0) 100%, #7230ff 100%);
+  bottom: 0;
+  left: 0;
+  animation: pulse-small 4s infinite ease-in-out;
+}
+
+
+.on-circle-uranus {
+  width: 320px;
+  height: 320px;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(143.15deg, #00fff0 8.37%, rgba(255, 0, 77, 0.2) 91.49%);
+  filter: blur(50px);
+  animation: pulse-big 6s infinite ease-in-out;
+}
+
+.on-circle-mercury {
+  width: 240px;
+  height: 240px;
+
+  filter: blur(15px);
+  bottom: -100px;
+  right: 40px;
+  animation: pulse-small 6s infinite ease-in-out;
+}
+
+.on-circle-mercury div {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+
+  width: 240px;
+  height: 200px;
+
+  background: linear-gradient(180deg, #00ff85 0%, rgba(0, 255, 71, 0) 100%);
+}
+
+
+.on-circle-jupiter {
+  width: 320px;
+  height: 320px;
+  left: 0;
+  top: -60px;
+
+  background: linear-gradient(180deg, rgba(100, 137, 148, 0) 0%, #ff29c3 100%);
+  filter: blur(40px);
+  animation: pulse-big 6s infinite ease-in-out;
+}
+
+.on-circle-venus {
+  width: 320px;
+  height: 320px;
+  left: 200px;
+  top: -50px;
+
+  width: 180px;
+  height: 240px;
+
+  background: linear-gradient(180deg, rgba(13, 64, 242, 0) 0%, #174aff 100%);
+  filter: blur(40px);
+
+  animation: pulse-small 6s infinite ease-in-out;
+}
+
+
+@keyframes pulse-small {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.05) translate(-10px, -30px);
+  }
+  50% {
+    transform: scale(0.9) translate(-40px, 40);
+  }
+  75% {
+    transform: scale(1.05) translate(-60px, -20px);
+  }
+}
+
+/* Define the animation for the big circle */
+@keyframes pulse-big {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.05) translate(-10px, 15px);
+  }
+  50% {
+    transform: scale(1) translate(-20px, -60px);
+  }
+  75% {
+    transform: scale(1.05) translate(-10px, -15px);
+  }
+}

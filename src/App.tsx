@@ -15,6 +15,7 @@ function App() {
         <Welcome />
         <Featured />
         <Popular />
+        
         <HowItWorks />
         <WhyEvaa />
         <Faq />

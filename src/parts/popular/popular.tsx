@@ -3,7 +3,7 @@ import usdtCoinSvg from '@/assets/usdt-coin.svg';
 import usdcCoinSvg from '@/assets/usdc-coin.svg';
 export const Popular = () => {
   return (
-    <div className="relative mt-32 md:px-6">
+    <div className="relative py-24 md:px-6">
       <div className="flex flex-col items-center relative h-full z-10 text-center gap-10">
         <h2 className="text-3xl md:text-5xl font-display max-w-lg text-center">Most popular tokens available</h2>
         <div className="flex gap-8 md:gap-32 mt-4 flex-nowrap">
