@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const Navigation = () => {
   return (
-    <header className="flex items-center md:items-start justify-between -mx-2 md:mx-0 md:p-6 gap-1 relative z-10">
+    <header className="flex items-center md:items-start justify-between -mx-2 md:mx-0 md:p-6 gap-1 relative z-10 pb-1 md:pb-0">
       <div className="flex-1 md:flex-grow-0">
         <Logo size={"base"} />
       </div>

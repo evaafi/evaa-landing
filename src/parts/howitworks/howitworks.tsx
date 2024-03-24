@@ -16,9 +16,9 @@ export const HowItWorks = () => {
   };
 
   return (
-    <div className="min-h-dvh flex flex-col relative py-24 gap-10">
-      <h2 className="text-7xl font-display text-center">How it works</h2>
-      <div className="flex-1 flex flex-col justify-center md:px-10 xl:px-32">
+    <div className="min-h-dvh flex flex-col relative py-24 gap-24 overflow-hidden -mx-5 px-5">
+      <h2 className="text-5xl md:text-7xl font-display text-center">How it works</h2>
+      <div className="flex-1 flex flex-col gap-32 md:gap-0 justify-center md:px-10 xl:px-32">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -36,12 +36,12 @@ export const HowItWorks = () => {
 
               <img
                 src={sunSvg}
-                className="absolute under-noise z-10 top-0 left-[50%] ml-[-350px] bottom-0 m-auto h-[700px] w-[700px] max-w-none opacity-80 overlay"
+                className="absolute z-10 top-0 left-[50%] ml-[-350px] bottom-0 m-auto h-[700px] w-[700px] max-w-none opacity-80 overlay"
                 alt=""
               />
 
-              <div className="on-circle on-circle-sun  under-noise" />
-              <div className="on-circle on-circle-venus under-noise" />
+              <div className="on-circle on-circle-sun" />
+              <div className="on-circle on-circle-venus" />
             </SectionImage>
             <SectionContent>
               <h3 className="text-4xl font-display">Borrow Crypto with Ease</h3>

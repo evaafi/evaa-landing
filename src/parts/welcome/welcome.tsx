@@ -7,7 +7,10 @@ export const Welcome = () => {
   const isMobile = useIsMobile();
   const isLargeScreen = useIsLargeScreen();
 
-  const coinVariants = {
+  const coinVariants = isMobile ? {
+    hidden: { opacity: 0, y: 100, x: -100 },
+    visible: { opacity: 1, y: 40, x: -60 },
+  } : {
     hidden: { opacity: 0, y: 0, x: 0 },
     visible: { opacity: 1, y: -140, x: 160 },
   };
@@ -23,9 +26,9 @@ export const Welcome = () => {
   };
 
   return (
-    <div className="flex flex-col relative md:z-0 bg-[#0057FF] md:bg-transparent rounded-lg overflow-hidden md:overflow-visible">
+    <div className="flex flex-col md:h-auto relative md:z-0 md:bg-transparent rounded-lg overflow-hidden md:overflow-visible">
       <div
-        className="rounded-lg h-[690px] overflow-hidden relative pt-6 md:-mt-24 md:pt-24 md:pb-36 noise"
+        className="rounded-lg md:h-[690px] md:overflow-hidden relative pt-6 pb-8 md:-mt-24 md:pt-24 md:pb-36 noise"
         style={{
           clipPath: "#desktop-bg-mask",
           background: "#0057FF",
@@ -40,9 +43,9 @@ export const Welcome = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          variants={coinVariants} className="under-noise"
+          variants={coinVariants} className="under-noise bottom-0 left-0"
         >
-          <img src={tonCoinSvg} alt="" />
+          <img src={tonCoinSvg} alt="" className="max-w-[540px]" />
         </motion.div>
         <div className="flex flex-col relative h-full z-10">
           <div className="flex flex-1 flex-col items-center justify-center text-center">
@@ -68,14 +71,14 @@ export const Welcome = () => {
                   transition={{ duration: 0.8 }}
                   variants={descriptionVariants}
                 >
-                  <p className="max-w-lg text-md md:text-xl">
+                  <p className="max-w-lg px-8 md:px-0 text-md md:text-xl">
                     Deposit assets, select a loan amount, and enjoy transparent,
                     decentralized lending
                   </p>
                 </motion.div>
               </div>
 
-              <div className="flex gap-16">
+              <div className="flex gap-2 mt-20 md:mt-0 md:gap-16">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -84,8 +87,8 @@ export const Welcome = () => {
                   variants={logoVariants}
                 >
                   <div className="w-[100px]">
-                    <h2 className="font-display text-4xl">#1 </h2>
-                    <span className="font-sans text-sm">
+                    <h2 className="font-display text-2xl md:text-4xl">#1 </h2>
+                    <span className="font-sans text-xs md:text-sm">
                       Lending App on TON
                     </span>
                   </div>
@@ -98,8 +101,8 @@ export const Welcome = () => {
                   variants={logoVariants}
                 >
                   <div className="w-[100px]">
-                    <h2 className="font-display text-4xl">#4 </h2>
-                    <span className="font-sans text-sm">App in TON Store</span>
+                    <h2 className="font-display text-2xl md:text-4xl">#4 </h2>
+                    <span className="font-sans text-xs md:text-sm">App in TON Store</span>
                   </div>
                 </motion.div>
 
@@ -111,8 +114,8 @@ export const Welcome = () => {
                   variants={logoVariants}
                 >
                   <div className="w-[100px]">
-                    <h2 className="font-display text-4xl">15k</h2>
-                    <span className="font-sans text-sm">
+                    <h2 className="font-display text-2xl md:text-4xl">15k</h2>
+                    <span className="font-sans text-xs md:text-sm">
                       Active Monthly users
                     </span>
                   </div>
@@ -122,7 +125,7 @@ export const Welcome = () => {
           </div>
         </div>
       </div>
-      <div className="md:absolute bottom-0 left-0 right-0 flex flex-col md:flex-row justify-center gap-4 items-center md:items-end pt-16">
+      <div className="md:absolute bottom-0 left-0 right-0 flex flex-col md:flex-row justify-center gap-4 items-center md:items-end pt-8 md:pt-16">
         <Button size="lg">Explore Web App</Button>
         <Button size="lg" variant="secondary">
           Open in Telegram

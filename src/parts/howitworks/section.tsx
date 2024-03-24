@@ -7,7 +7,7 @@ export const Section = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-12 md:flex-row justify-stretch items-center h-[600px]",
+        "flex flex-col gap-10 md:grid md:grid-cols-12 md:h-[600px]",
         className
       )}
     >
@@ -23,7 +23,7 @@ export const SectionImage = ({
   return (
     <div
       className={cn(
-        "col-span-5 col-start-2 md:flex-row justify-center relative",
+        "col-span-5 px-4 md:px-0 col-start-2 md:flex-row justify-center relative",
         className
       )}
     >
@@ -39,7 +39,7 @@ export const SectionContent = ({
   return (
     <div
       className={cn(
-        "col-start-8 col-span-5 flex flex-col items-start gap-6 pr-8",
+        "col-start-8 col-span-5 flex flex-col md:items-start gap-6 md:pr-8 text-center md:text-left relative z-10",
         className
       )}
     >
