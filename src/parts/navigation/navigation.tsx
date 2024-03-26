@@ -1,6 +1,7 @@
 import { MenuIcon } from "@/components/icons/menu";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
+import { MobileNavigation } from "./mobile-navigation";
 
 export const Navigation = () => {
   return (
@@ -22,12 +23,12 @@ export const Navigation = () => {
         >
           How it works
         </Button>
-        <Button
+        {/* <Button
           variant="ghost"
           className="font-normal p-2 h-10 hover:bg-transparent"
         >
           Calculate ROI
-        </Button>
+        </Button> */}
         <Button
           variant="ghost"
           className="font-normal p-2 h-10 hover:bg-transparent"
@@ -36,13 +37,13 @@ export const Navigation = () => {
         </Button>
       </nav>
       <div className="w-32 flex justify-end">
-      <Button variant="secondary" className="h-9 text-sm md:text-md md:h-12">
-        Try App
-      </Button>
+        <Button asChild variant="secondary" className="h-9 text-sm md:text-md md:h-12">
+          <a href="https://app.evaa.finance/" target="_blank">
+            Try App
+          </a>
+        </Button>
       </div>
-      <Button variant="ghost" className="md:hidden px-2">
-        <MenuIcon width={36} height={36} />
-      </Button>
+      <MobileNavigation />
     </header>
   );
 };

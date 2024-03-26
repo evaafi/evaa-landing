@@ -7,13 +7,15 @@ export const Welcome = () => {
   const isMobile = useIsMobile();
   const isLargeScreen = useIsLargeScreen();
 
-  const coinVariants = isMobile ? {
-    hidden: { opacity: 0, y: 100, x: -100 },
-    visible: { opacity: 1, y: 40, x: -60 },
-  } : {
-    hidden: { opacity: 0, y: 0, x: 0 },
-    visible: { opacity: 1, y: -140, x: 160 },
-  };
+  const coinVariants = isMobile
+    ? {
+        hidden: { opacity: 0, y: 100, x: -100 },
+        visible: { opacity: 1, y: 40, x: -60 },
+      }
+    : {
+        hidden: { opacity: 0, y: 0, x: 0 },
+        visible: { opacity: 1, y: -140, x: 160 },
+      };
 
   const logoVariants = {
     hidden: { opacity: 0, y: 100, x: 0 },
@@ -28,7 +30,7 @@ export const Welcome = () => {
   return (
     <div className="flex flex-col md:h-auto relative md:z-0 md:bg-transparent rounded-lg overflow-hidden md:overflow-visible">
       <div
-        className="rounded-lg md:h-[690px] md:overflow-hidden relative pt-6 pb-8 md:-mt-24 md:pt-24 md:pb-36 noise"
+        className="rounded-lg md:h-[690px] md:overflow-hidden relative pt-6 pb-8 md:-mt-[72px] md:pt-24 md:pb-36 noise"
         style={{
           clipPath: "#desktop-bg-mask",
           background: "#0057FF",
@@ -43,7 +45,8 @@ export const Welcome = () => {
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          variants={coinVariants} className="under-noise bottom-0 left-0"
+          variants={coinVariants}
+          className="under-noise bottom-0 left-0"
         >
           <img src={tonCoinSvg} alt="" className="max-w-[540px]" />
         </motion.div>
@@ -102,7 +105,9 @@ export const Welcome = () => {
                 >
                   <div className="w-[100px]">
                     <h2 className="font-display text-2xl md:text-4xl">#4 </h2>
-                    <span className="font-sans text-xs md:text-sm">App in TON Store</span>
+                    <span className="font-sans text-xs md:text-sm">
+                      App in TON Store
+                    </span>
                   </div>
                 </motion.div>
 
@@ -125,10 +130,16 @@ export const Welcome = () => {
           </div>
         </div>
       </div>
-      <div className="md:absolute bottom-0 left-0 right-0 flex flex-col md:flex-row justify-center gap-4 items-center md:items-end pt-8 md:pt-16">
-        <Button size="lg">Explore Web App</Button>
-        <Button size="lg" variant="secondary">
-          Open in Telegram
+      <div className="md:absolute z-30 bottom-0 left-0 right-0 flex flex-col md:flex-row justify-center gap-4 items-center md:items-end pt-8 md:pt-16">
+        <Button asChild size="lg">
+          <a href="https://app.evaa.finance/" target="_blank">
+            Explore Web App
+          </a>
+        </Button>
+        <Button asChild size="lg" variant="secondary">
+          <a href="https://t.me/EvaaAppBot?start" target="_blank">
+            Open in Telegram
+          </a>
         </Button>
       </div>
     </div>
