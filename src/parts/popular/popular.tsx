@@ -9,7 +9,7 @@ export const Popular = () => {
   };
 
   return (
-    <div className="relative py-24 md:px-6">
+    <div className="relative py-16 md:py-24 md:px-6">
       <div className="flex flex-col items-center relative h-full z-10 text-center gap-10">
         <h2 className="text-3xl md:text-5xl font-display max-w-lg text-center">
           Most popular tokens available

@@ -1,4 +1,3 @@
-import { MenuIcon } from "@/components/icons/menu";
 import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { MobileNavigation } from "./mobile-navigation";

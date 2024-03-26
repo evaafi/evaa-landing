@@ -16,7 +16,7 @@ export const HowItWorks = () => {
   };
 
   return (
-    <div className="min-h-dvh flex flex-col relative py-24 gap-24 overflow-hidden -mx-5 px-5">
+    <div className="min-h-dvh flex flex-col relative py-16 md:py-24 gap-24 overflow-hidden -mx-5 px-5">
       <h2 className="text-5xl md:text-7xl font-display text-center">How it works</h2>
       <div className="flex-1 flex flex-col gap-32 md:gap-0 justify-center md:px-10 xl:px-32">
         <motion.div

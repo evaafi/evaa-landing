@@ -3,7 +3,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 export const Faq = () => {
   return (
-    <div className="flex flex-col lg:flex-row container w-3xl gap-10 lg:gap-20 mt-52 mb-32 flex-wrap">
+    <div className="flex flex-col lg:flex-row container w-3xl gap-10 lg:gap-20 mt-24 md:mt-52 mb-32 flex-wrap">
       <h2 className="text-5xl font-display text-center lg:text-left relative lg:top-4">Have <br /> questions?</h2>
       <div className="flex flex-1">
         <Accordion
