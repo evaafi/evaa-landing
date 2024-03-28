@@ -32,7 +32,7 @@ export const WhyEvaa = () => {
             className="flex-1"
           >
             <Card
-              className="bg-[#FF5349] h-full bg-no-repeat hover:scale-[1.03] transition-transform duration-300"
+              className="bg-[#FF5349] h-full bg-no-repeat hover:scale-[1.03] transition-transform duration-300 cursor-default"
               style={{
                 backgroundImage: `url(${abstractN1})`,
                 backgroundSize: "667px 667px",
@@ -52,10 +52,10 @@ export const WhyEvaa = () => {
                   </span>
                 </div>
                 <p className="pr-4 text-tertiary text-sm md:text-base">
-                  Easily borrow cryptocurrencies through our user-friendly
-                  platform. Deposit assets, select a loan amount, and enjoy
-                  transparent, decentralized lending with competitive interest
-                  rates.
+                  EVAA is the #1 lending protocol on TON blockchain, uniquely
+                  positioned as the largest and most user-friendly platform on
+                  TON blockchain and Telegram. EVAA has the largest TVL on TON.
+                  Experience the best decentralized borrowing with EVAA.
                 </p>
               </CardContent>
             </Card>
@@ -68,9 +68,8 @@ export const WhyEvaa = () => {
             transition={{ duration: 0.8 }}
             variants={logoVariants}
             className="flex-1"
-
           >
-            <Card className="hover:scale-[1.03] h-full transition-transform duration-300">
+            <Card className="hover:scale-[1.03] h-full transition-transform duration-300 cursor-default">
               <CardContent className="p-8 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-display">
@@ -78,10 +77,10 @@ export const WhyEvaa = () => {
                   </span>
                 </div>
                 <p className="pr-4 text-tertiary text-sm md:text-base">
-                  Easily borrow cryptocurrencies through our user-friendly
-                  platform. Deposit assets, select a loan amount, and enjoy
-                  transparent, decentralized lending with competitive interest
-                  rates.
+                  The EVAA Protocol, supporting TON, jettons, and wrapped assets
+                  from other chains, maximizes the utility of TON blockchain.
+                  This enables seamless interaction with a variety of digital
+                  assets, offering users exquisite experience.
                 </p>
               </CardContent>
             </Card>
@@ -96,7 +95,7 @@ export const WhyEvaa = () => {
             variants={logoVariants}
             className="md:flex-1"
           >
-            <Card className="bg-[#8955F7] h-[633px] break-inside-avoid relative overflow-hidden hover:scale-[1.03] transition-transform duration-300">
+            <Card className="bg-[#8955F7] h-[633px] break-inside-avoid relative overflow-hidden hover:scale-[1.03] transition-transform duration-300 cursor-default">
               <CardContent className="p-8 space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-display">
@@ -104,10 +103,10 @@ export const WhyEvaa = () => {
                   </span>
                 </div>
                 <p className="text-sm md:text-base text-tertiary">
-                  Easily borrow cryptocurrencies through our user-friendly
-                  platform. Deposit assets, select a loan amount, and enjoy
-                  transparent, decentralized lending with competitive interest
-                  rates.
+                  EVAA enhances user experience by supporting a Telegram mini
+                  app, offering a seamless and customized interface within
+                  Telegram itself. This integration provides convenience and a
+                  native feel directly in Telegram.
                 </p>
               </CardContent>
               <img
@@ -125,7 +124,7 @@ export const WhyEvaa = () => {
               <img
                 src={evaaIphonePng}
                 alt=""
-                className="absolute bottom-[-180px] left-[50%] ml-[-155px] z-[2]"
+                className="absolute bottom-[-220px] md:bottom-[-180px] left-[50%] ml-[-155px] z-[2]"
               />
             </Card>
           </motion.div>
@@ -138,7 +137,7 @@ export const WhyEvaa = () => {
               transition={{ duration: 0.8 }}
               variants={logoVariants}
             >
-              <Card className="break-inside-avoid hover:scale-[1.03] transition-transform duration-300">
+              <Card className="break-inside-avoid hover:scale-[1.03] transition-transform duration-300 cursor-default">
                 <CardContent className="p-8 space-y-4">
                   <div className="flex items-center gap-2">
                     <span className="text-xl lg:text-2xl font-display">
@@ -146,10 +145,10 @@ export const WhyEvaa = () => {
                     </span>
                   </div>
                   <p className="text-sm md:text-base text-tertiary">
-                    Easily borrow cryptocurrencies through our user-friendly
-                    platform. Deposit assets, select a loan amount, and enjoy
-                    transparent, decentralized lending with competitive interest
-                    rates.
+                    VAA supports TON Space, Telegram's non- custodial wallet,
+                    allowing you to manage your assets directly within Telegram.
+                    No need to switch apps—EVAA brings streamlined blockchain
+                    lending right to where you are.
                   </p>
                 </CardContent>
               </Card>
@@ -162,40 +161,44 @@ export const WhyEvaa = () => {
               variants={logoVariants}
               className="flex-1"
             >
-              <Card className="bg-[#57FF84] h-full hover:scale-[1.03] transition-transform duration-300">
+              <Card className="bg-[#57FF84] h-full hover:scale-[1.03] transition-transform duration-300 cursor-default">
                 <CardContent className="p-8 space-y-4">
                   <div className="flex items-center gap-2">
-                    <span className="text-xl 2xl:text-2xl font-display text-black">
+                    <span className="text-xl md:text-2xl font-display text-black">
                       Operated by community
                     </span>
                   </div>
-                  <p className="text-black text-sm ">
-                    Easily borrow cryptocurrencies through our user-friendly
-                    platform. Deposit assets, select a loan amount, and enjoy
-                    transparent, decentralized lending with competitive interest
-                    rates.
+                  <p className="text-black text-sm md:text-base">
+                    EVAA has a massive presence with ~400,000 members on
+                    Telegram and ~190,000 in our Community Hub, highlighting our
+                    role as a major player in the blockchain community. Join our
+                    dynamic and engaging network today.
                   </p>
                   <div className="flex -space-x-9 pt-2">
                     <img
-                      className="w-12 h-12 2xl:w-20 2xl:h-20"
+                      className="w-14 h-14 md:w-20 md:h-20"
                       src={user1Png}
                       alt=""
                     />
                     <img
-                      className="w-12 h-12 2xl:w-20 2xl:h-20"
+                      className="w-14 h-14 md:w-20 md:h-20"
                       src={user2Png}
                       alt=""
                     />
                     <img
-                      className="w-12 h-12 2xl:w-20 2xl:h-20"
+                      className="w-14 h-14 md:w-20 md:h-20"
                       src={user3Png}
                       alt=""
                     />
                     <img
-                      className="w-12 h-12 2xl:w-20 2xl:h-20"
+                      className="w-14 h-14 md:w-20 md:h-20"
                       src={user4Png}
                       alt=""
                     />
+                    <div className="bg-black rounded-full w-14 h-14 md:w-20 md:h-20 flex flex-col justify-center items-center">
+                      <span className="text-base md:text-2xl">400k</span>
+                      <span className="text-xs">subs</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
