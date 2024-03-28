@@ -2,14 +2,14 @@ import { Logo } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { MobileNavigation } from "./mobile-navigation";
 
-export const Navigation = () => {
+export const Header = () => {
   return (
     <header className="flex items-center md:items-start justify-between -mx-2 md:mx-0 md:p-6 gap-1 relative z-10 pb-1 md:pb-0">
       <div className="flex-1 md:flex-grow-0">
         <Logo size={"base"} />
       </div>
 
-      <nav className="flex-wrap justify-center md:-mt-6 gap-4 hidden md:flex">
+      <nav className="flex-wrap flex-1 justify-center md:-mt-6 gap-4 hidden md:flex">
         <Button
           variant="ghost"
           className="font-normal p-2 h-10 hover:bg-transparent"
@@ -22,12 +22,6 @@ export const Navigation = () => {
         >
           How it works
         </Button>
-        {/* <Button
-          variant="ghost"
-          className="font-normal p-2 h-10 hover:bg-transparent"
-        >
-          Calculate ROI
-        </Button> */}
         <Button
           variant="ghost"
           className="font-normal p-2 h-10 hover:bg-transparent"

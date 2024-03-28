@@ -1,8 +1,7 @@
 import { tokens } from "@/data/tokens";
 import { motion } from "framer-motion";
 
-export const Popular = () => {
-
+export const Tokens = () => {
   const logoVariants = {
     hidden: { opacity: 0, y: 80 },
     visible: { opacity: 1, y: 0 },
@@ -35,7 +34,7 @@ export const Popular = () => {
                     {token.ticker}
                   </h4>
                   <p className="text-lg text-muted-foreground">
-                    {token.apy} API
+                    {token.apy} APY
                   </p>
                 </div>
               </div>
