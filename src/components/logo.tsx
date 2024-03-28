@@ -5,7 +5,6 @@ export type LogoProps = SVGProps<SVGSVGElement> & {
   size: "base" | "lg";
 };
 
-
 export const Logo = ({ className, ...props }: LogoProps) => {
   return (
     <div className="font-bold text-sm flex items-center">
@@ -30,10 +29,7 @@ export const Logo = ({ className, ...props }: LogoProps) => {
         </svg>
       </span>
       <span
-        className={cn(
-          "font-black uppercase w-20 leading-[14px] text-sm",
-          className
-        )}
+        className={cn("font-black uppercase w-20 leading-[14px]", className)}
       >
         Evaa Protocol
       </span>
